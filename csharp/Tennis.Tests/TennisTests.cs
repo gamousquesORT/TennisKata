@@ -53,10 +53,10 @@ namespace Tennis.Tests
     {
         [Theory]
         [ClassData(typeof(TestDataGenerator))]
-        public void Tennis1Test(int p1, int p2, string expected)
+        public void Tennis1Test(int playerOne, int playerTwo, string expected)
         {
             var game = new TennisGame1("player1", "player2");
-            CheckAllScores(game, p1, p2, expected);
+            CheckAllScores(game, playerOne, playerTwo, expected);
         }
 
         [Theory]
